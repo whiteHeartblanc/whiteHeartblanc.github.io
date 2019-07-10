@@ -232,6 +232,7 @@ li:hover{
 	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#415989', endColorstr='#2e466e',GradientType=0);
 	background-color:#415989;
+    
 }
 				
 input[type=date]{

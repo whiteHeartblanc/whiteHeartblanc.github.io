@@ -1,9 +1,9 @@
 window.onload = function(){
-    
+    fileupload();
     var newARR
     var fileExist = 0   
-    
-    
+       $("#upload").click(fileupload)
+    function fileupload(){
         var uploadDiv = document.createElement("div")
         uploadDiv.className = "uploadFile"
         uploadDiv.innerHTML = "<input type= 'file' id= 'upFile' accept= '.json'>"
@@ -12,7 +12,7 @@ window.onload = function(){
         console.log("divCreated")
         
         //var fr = new FileReader();
-        
+    
         document.getElementById('upFile').onchange = function() {
 	       var input = document.getElementById('upFile');
             
@@ -44,6 +44,8 @@ window.onload = function(){
             
    
         } 
+    }
+    
 
     document.getElementById("view").onclick = function(){
         if(fileExist == 1){
