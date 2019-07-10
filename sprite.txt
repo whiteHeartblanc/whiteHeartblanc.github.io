@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-krabssmall {
+    width: 49px;
+    height: 53px;
+    background-position: -5px -5px;
+}
+
+.sprite-songebobsmall {
+    width: 49px;
+    height: 52px;
+    background-position: -64px -5px;
+}
+
+.sprite-squidwardssmall {
+    width: 48px;
+    height: 54px;
+    background-position: -64px -67px;
+}
+
+
+HTML:
+<i class="sprite sprite-krabssmall"></i>
+<i class="sprite sprite-songebobsmall"></i>
+<i class="sprite sprite-squidwardssmall"></i>

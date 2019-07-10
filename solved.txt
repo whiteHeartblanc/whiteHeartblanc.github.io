@@ -1,0 +1,53 @@
+window.onload = function(){
+    
+    
+    document.getElementById("upload").onclick = function(){
+        var uploadDiv = document.createElement("div")
+        uploadDiv.className = "uploadFile"
+        uploadDiv.innerHTML = "<input type= 'file' id= 'upFile' accept= '.json'>"
+        $("#content").empty()
+        $("#content").append(uploadDiv)
+        console.log("divCreated")
+        
+        //var fr = new FileReader();
+        
+        document.getElementById('upFile').onchange = function() {
+	       var input = document.getElementById('upFile');
+  
+            file= input.files[0];
+           
+            var fr = new FileReader();
+            fr.onload= receivedText;
+            fr.readAsText(file);
+            
+            function receivedText(e){
+                let lines= e.target.result;
+                var newARR=JSON.parse(lines);
+                 console.log(newARR);
+                console.log(Object.values(newARR.burger_by_species)[1])
+            }
+            
+            
+           
+            
+           /* fr.onload = function(e) { 
+               console.log(e);
+                var result = JSON.parse(e.target.result);
+        //console.log(result[0].burger)
+                var formatted = JSON.stringify(result, null, 2);
+                console.log(result);
+              
+                
+            }
+  */
+           // console.log(fr.readAsText(files.item(0)));
+          // console.log(formatted)
+        }
+    }   
+    
+    document.getElementById("home").onclick = function(){
+        $("#content").empty()
+    }
+    
+    
+}
