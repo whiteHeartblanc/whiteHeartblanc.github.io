@@ -4,6 +4,7 @@ body{
     background-repeat:   no-repeat;
     background-position: center center;
     font-family: Helvetica;
+     cursor: url('cursor.cur'), auto;
 }
 
 
