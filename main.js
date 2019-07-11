@@ -261,7 +261,7 @@ window.onload = function(){
     
         var chart = new google.visualization.ColumnChart(viewCharts);
         chart.draw(view, options);
-              //    $("#content").empty()
+                   $("#content").empty()
     
           $("#content").append(viewCharts)
  
